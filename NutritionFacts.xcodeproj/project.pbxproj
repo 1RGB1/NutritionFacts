@@ -15,8 +15,12 @@
 		D26022A5292A55FD003B8127 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A4292A55FD003B8127 /* Data+Extensions.swift */; };
 		D26022A7292A563F003B8127 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A6292A563F003B8127 /* NetworkError.swift */; };
 		D26022A9292A57EF003B8127 /* NetworkConfigInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A8292A57EF003B8127 /* NetworkConfigInfo.swift */; };
+		D26022AE292AC272003B8127 /* NutritionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022AC292AC272003B8127 /* NutritionFactsViewController.swift */; };
+		D26022AF292AC272003B8127 /* NutritionFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26022AD292AC272003B8127 /* NutritionFactsViewController.xib */; };
+		D26022B6292AC329003B8127 /* FactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022B5292AC329003B8127 /* FactsRouter.swift */; };
+		D26022B9292AC359003B8127 /* FactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022B8292AC359003B8127 /* FactsModel.swift */; };
+		D26022BB292AC370003B8127 /* NutritionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022BA292AC370003B8127 /* NutritionModel.swift */; };
 		D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */; };
-		D2F46BC7292A0D56005DA9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F46BC6292A0D56005DA9CB /* ViewController.swift */; };
 		D2F46BCA292A0D56005DA9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BC8292A0D56005DA9CB /* Main.storyboard */; };
 		D2F46BCC292A0D57005DA9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BCB292A0D57005DA9CB /* Assets.xcassets */; };
 		D2F46BCF292A0D57005DA9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BCD292A0D57005DA9CB /* LaunchScreen.storyboard */; };
@@ -31,9 +35,13 @@
 		D26022A4292A55FD003B8127 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		D26022A6292A563F003B8127 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D26022A8292A57EF003B8127 /* NetworkConfigInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigInfo.swift; sourceTree = "<group>"; };
+		D26022AC292AC272003B8127 /* NutritionFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsViewController.swift; sourceTree = "<group>"; };
+		D26022AD292AC272003B8127 /* NutritionFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionFactsViewController.xib; sourceTree = "<group>"; };
+		D26022B5292AC329003B8127 /* FactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsRouter.swift; sourceTree = "<group>"; };
+		D26022B8292AC359003B8127 /* FactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsModel.swift; sourceTree = "<group>"; };
+		D26022BA292AC370003B8127 /* NutritionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionModel.swift; sourceTree = "<group>"; };
 		D2F46BBF292A0D56005DA9CB /* NutritionFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2F46BC6292A0D56005DA9CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2F46BC9292A0D56005DA9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2F46BCB292A0D57005DA9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2F46BCE292A0D57005DA9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,6 +96,58 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D26022B0292AC279003B8127 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D26022AC292AC272003B8127 /* NutritionFactsViewController.swift */,
+				D26022AD292AC272003B8127 /* NutritionFactsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D26022B1292AC27E003B8127 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D26022B2292AC289003B8127 /* NutritionFacts */ = {
+			isa = PBXGroup;
+			children = (
+				D26022B7292AC34A003B8127 /* Model */,
+				D26022B4292AC313003B8127 /* Router */,
+				D26022B3292AC2A1003B8127 /* Usecase */,
+				D26022B1292AC27E003B8127 /* ViewModel */,
+				D26022B0292AC279003B8127 /* View */,
+			);
+			path = NutritionFacts;
+			sourceTree = "<group>";
+		};
+		D26022B3292AC2A1003B8127 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		D26022B4292AC313003B8127 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D26022B5292AC329003B8127 /* FactsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D26022B7292AC34A003B8127 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D26022B8292AC359003B8127 /* FactsModel.swift */,
+				D26022BA292AC370003B8127 /* NutritionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D2F46BB6292A0D56005DA9CB = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +174,6 @@
 				D2F46BD8292A1A47005DA9CB /* Modules */,
 				D2F46BDC292A1B56005DA9CB /* MockModel */,
 				D2F46BD6292A0DDB005DA9CB /* SupportingFiles */,
-				D2F46BC6292A0D56005DA9CB /* ViewController.swift */,
 			);
 			path = NutritionFacts;
 			sourceTree = "<group>";
@@ -144,6 +203,7 @@
 		D2F46BD8292A1A47005DA9CB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D26022B2292AC289003B8127 /* NutritionFacts */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -243,6 +303,7 @@
 			files = (
 				D2F46BCF292A0D57005DA9CB /* LaunchScreen.storyboard in Resources */,
 				D2F46BCC292A0D57005DA9CB /* Assets.xcassets in Resources */,
+				D26022AF292AC272003B8127 /* NutritionFactsViewController.xib in Resources */,
 				D2F46BCA292A0D56005DA9CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +358,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D26022A3292A52DA003B8127 /* MetaModel.swift in Sources */,
+				D26022B6292AC329003B8127 /* FactsRouter.swift in Sources */,
 				D26022A7292A563F003B8127 /* NetworkError.swift in Sources */,
+				D26022BB292AC370003B8127 /* NutritionModel.swift in Sources */,
 				D26022A5292A55FD003B8127 /* Data+Extensions.swift in Sources */,
 				D260229D292A51BD003B8127 /* NetworkManager.swift in Sources */,
-				D2F46BC7292A0D56005DA9CB /* ViewController.swift in Sources */,
+				D26022B9292AC359003B8127 /* FactsModel.swift in Sources */,
 				D2602299292A4F7C003B8127 /* ApiBaseRouter.swift in Sources */,
 				D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */,
 				D26022A9292A57EF003B8127 /* NetworkConfigInfo.swift in Sources */,
 				D26022A1292A52C3003B8127 /* BaseModel.swift in Sources */,
+				D26022AE292AC272003B8127 /* NutritionFactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
