@@ -46,7 +46,6 @@
 				BA8A064353D20FEC53F06E60 /* Pods-NutritionFacts.debug.xcconfig */,
 				FFF8DBC7582C3AC514542451 /* Pods-NutritionFacts.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +78,10 @@
 		D2F46BC1292A0D56005DA9CB /* NutritionFacts */ = {
 			isa = PBXGroup;
 			children = (
+				D2F46BD9292A1A53005DA9CB /* Network */,
+				D2F46BD7292A1A3D005DA9CB /* Common */,
+				D2F46BD8292A1A47005DA9CB /* Modules */,
+				D2F46BDC292A1B56005DA9CB /* MockModel */,
 				D2F46BD6292A0DDB005DA9CB /* SupportingFiles */,
 				D2F46BC6292A0D56005DA9CB /* ViewController.swift */,
 			);
@@ -95,6 +98,50 @@
 				D2F46BD0292A0D57005DA9CB /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D2F46BD7292A1A3D005DA9CB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D2F46BDA292A1B11005DA9CB /* Extensions */,
+				D2F46BDB292A1B19005DA9CB /* Handlers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D2F46BD8292A1A47005DA9CB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D2F46BD9292A1A53005DA9CB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D2F46BDA292A1B11005DA9CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D2F46BDB292A1B19005DA9CB /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		D2F46BDC292A1B56005DA9CB /* MockModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MockModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
