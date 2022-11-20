@@ -1,7 +1,3 @@
-# GitRepoFind
-
-<img src="https://github.com/1RGB1/GitRepoFind/blob/main/GitRepoFind/ScreenShots/AppIcon.png" width="100" height="100" />
-
 ## Description
 
 - Application to show nutrition facts to random ingredients.
