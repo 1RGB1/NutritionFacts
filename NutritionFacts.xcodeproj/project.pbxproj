@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		20AEF6277C6633DF42D01F76 /* Pods_NutritionFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8556A783BE40FD26E68E716 /* Pods_NutritionFacts.framework */; };
+		D2602299292A4F7C003B8127 /* ApiBaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2602298292A4F7C003B8127 /* ApiBaseRouter.swift */; };
+		D260229D292A51BD003B8127 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260229C292A51BD003B8127 /* NetworkManager.swift */; };
+		D26022A1292A52C3003B8127 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A0292A52C3003B8127 /* BaseModel.swift */; };
+		D26022A3292A52DA003B8127 /* MetaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A2292A52DA003B8127 /* MetaModel.swift */; };
+		D26022A5292A55FD003B8127 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A4292A55FD003B8127 /* Data+Extensions.swift */; };
+		D26022A7292A563F003B8127 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A6292A563F003B8127 /* NetworkError.swift */; };
+		D26022A9292A57EF003B8127 /* NetworkConfigInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A8292A57EF003B8127 /* NetworkConfigInfo.swift */; };
 		D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */; };
 		D2F46BC7292A0D56005DA9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F46BC6292A0D56005DA9CB /* ViewController.swift */; };
 		D2F46BCA292A0D56005DA9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BC8292A0D56005DA9CB /* Main.storyboard */; };
@@ -17,6 +24,13 @@
 
 /* Begin PBXFileReference section */
 		BA8A064353D20FEC53F06E60 /* Pods-NutritionFacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionFacts.debug.xcconfig"; path = "Target Support Files/Pods-NutritionFacts/Pods-NutritionFacts.debug.xcconfig"; sourceTree = "<group>"; };
+		D2602298292A4F7C003B8127 /* ApiBaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBaseRouter.swift; sourceTree = "<group>"; };
+		D260229C292A51BD003B8127 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D26022A0292A52C3003B8127 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		D26022A2292A52DA003B8127 /* MetaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaModel.swift; sourceTree = "<group>"; };
+		D26022A4292A55FD003B8127 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		D26022A6292A563F003B8127 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D26022A8292A57EF003B8127 /* NetworkConfigInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigInfo.swift; sourceTree = "<group>"; };
 		D2F46BBF292A0D56005DA9CB /* NutritionFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F46BC6292A0D56005DA9CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +71,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D260229E292A528E003B8127 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D26022A2292A52DA003B8127 /* MetaModel.swift */,
+				D26022A6292A563F003B8127 /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D260229F292A52AE003B8127 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D26022A0292A52C3003B8127 /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D2F46BB6292A0D56005DA9CB = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +109,8 @@
 		D2F46BC1292A0D56005DA9CB /* NutritionFacts */ = {
 			isa = PBXGroup;
 			children = (
-				D2F46BD9292A1A53005DA9CB /* Network */,
 				D2F46BD7292A1A3D005DA9CB /* Common */,
+				D2F46BD9292A1A53005DA9CB /* Network */,
 				D2F46BD8292A1A47005DA9CB /* Modules */,
 				D2F46BDC292A1B56005DA9CB /* MockModel */,
 				D2F46BD6292A0DDB005DA9CB /* SupportingFiles */,
@@ -103,6 +134,7 @@
 		D2F46BD7292A1A3D005DA9CB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D260229F292A52AE003B8127 /* Model */,
 				D2F46BDA292A1B11005DA9CB /* Extensions */,
 				D2F46BDB292A1B19005DA9CB /* Handlers */,
 			);
@@ -119,6 +151,10 @@
 		D2F46BD9292A1A53005DA9CB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D260229E292A528E003B8127 /* Model */,
+				D2602298292A4F7C003B8127 /* ApiBaseRouter.swift */,
+				D260229C292A51BD003B8127 /* NetworkManager.swift */,
+				D26022A8292A57EF003B8127 /* NetworkConfigInfo.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -126,6 +162,7 @@
 		D2F46BDA292A1B11005DA9CB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D26022A4292A55FD003B8127 /* Data+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -259,8 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D26022A3292A52DA003B8127 /* MetaModel.swift in Sources */,
+				D26022A7292A563F003B8127 /* NetworkError.swift in Sources */,
+				D26022A5292A55FD003B8127 /* Data+Extensions.swift in Sources */,
+				D260229D292A51BD003B8127 /* NetworkManager.swift in Sources */,
 				D2F46BC7292A0D56005DA9CB /* ViewController.swift in Sources */,
+				D2602299292A4F7C003B8127 /* ApiBaseRouter.swift in Sources */,
 				D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */,
+				D26022A9292A57EF003B8127 /* NetworkConfigInfo.swift in Sources */,
+				D26022A1292A52C3003B8127 /* BaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
