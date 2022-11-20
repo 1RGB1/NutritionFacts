@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20AEF6277C6633DF42D01F76 /* Pods_NutritionFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8556A783BE40FD26E68E716 /* Pods_NutritionFacts.framework */; };
 		D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */; };
 		D2F46BC7292A0D56005DA9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F46BC6292A0D56005DA9CB /* ViewController.swift */; };
 		D2F46BCA292A0D56005DA9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BC8292A0D56005DA9CB /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA8A064353D20FEC53F06E60 /* Pods-NutritionFacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionFacts.debug.xcconfig"; path = "Target Support Files/Pods-NutritionFacts/Pods-NutritionFacts.debug.xcconfig"; sourceTree = "<group>"; };
 		D2F46BBF292A0D56005DA9CB /* NutritionFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F46BC6292A0D56005DA9CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		D2F46BCB292A0D57005DA9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2F46BCE292A0D57005DA9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2F46BD0292A0D57005DA9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8556A783BE40FD26E68E716 /* Pods_NutritionFacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutritionFacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF8DBC7582C3AC514542451 /* Pods-NutritionFacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionFacts.release.xcconfig"; path = "Target Support Files/Pods-NutritionFacts/Pods-NutritionFacts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AEF6277C6633DF42D01F76 /* Pods_NutritionFacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4656C8E66908BC72FED1E5C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A064353D20FEC53F06E60 /* Pods-NutritionFacts.debug.xcconfig */,
+				FFF8DBC7582C3AC514542451 /* Pods-NutritionFacts.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC2FB89076AB23EE241E7D7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8556A783BE40FD26E68E716 /* Pods_NutritionFacts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2F46BB6292A0D56005DA9CB = {
 			isa = PBXGroup;
 			children = (
 				D2F46BC1292A0D56005DA9CB /* NutritionFacts */,
 				D2F46BC0292A0D56005DA9CB /* Products */,
+				4656C8E66908BC72FED1E5C0 /* Pods */,
+				CC2FB89076AB23EE241E7D7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2F46BD3292A0D57005DA9CB /* Build configuration list for PBXNativeTarget "NutritionFacts" */;
 			buildPhases = (
+				AC52925DA8FCF43BCEBB8C83 /* [CP] Check Pods Manifest.lock */,
 				D2F46BBB292A0D56005DA9CB /* Sources */,
 				D2F46BBC292A0D56005DA9CB /* Frameworks */,
 				D2F46BBD292A0D56005DA9CB /* Resources */,
+				14C43F5AB1786201252BFC74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -108,7 +135,7 @@
 				};
 			};
 			buildConfigurationList = D2F46BBA292A0D56005DA9CB /* Build configuration list for PBXProject "NutritionFacts" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,6 +164,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14C43F5AB1786201252BFC74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutritionFacts/Pods-NutritionFacts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutritionFacts/Pods-NutritionFacts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NutritionFacts/Pods-NutritionFacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC52925DA8FCF43BCEBB8C83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NutritionFacts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2F46BBB292A0D56005DA9CB /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		D2F46BD4292A0D57005DA9CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8A064353D20FEC53F06E60 /* Pods-NutritionFacts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		D2F46BD5292A0D57005DA9CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF8DBC7582C3AC514542451 /* Pods-NutritionFacts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
