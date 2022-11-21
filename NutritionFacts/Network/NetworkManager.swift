@@ -15,7 +15,7 @@ class NetworkManager {
     
     static let shared: NetworkManager = {
         return NetworkManager()
-    } ()
+    }()
     
     /// To load data from api in a generic way
     /// - Parameters:

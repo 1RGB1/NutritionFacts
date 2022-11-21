@@ -26,6 +26,7 @@
 		D26022CA292AD53C003B8127 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022C9292AD53C003B8127 /* UIColor+Extensions.swift */; };
 		D26022D3292B633B003B8127 /* NutritionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022D1292B633B003B8127 /* NutritionFactsViewController.swift */; };
 		D26022D4292B633B003B8127 /* NutritionFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26022D2292B633B003B8127 /* NutritionFactsViewController.xib */; };
+		D2DEF3E1292BF3640006E648 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEF3E0292BF3640006E648 /* ResponseModel.swift */; };
 		D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */; };
 		D2F46BCC292A0D57005DA9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BCB292A0D57005DA9CB /* Assets.xcassets */; };
 		D2F46BCF292A0D57005DA9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BCD292A0D57005DA9CB /* LaunchScreen.storyboard */; };
@@ -51,6 +52,7 @@
 		D26022C9292AD53C003B8127 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		D26022D1292B633B003B8127 /* NutritionFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsViewController.swift; sourceTree = "<group>"; };
 		D26022D2292B633B003B8127 /* NutritionFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionFactsViewController.xib; sourceTree = "<group>"; };
+		D2DEF3E0292BF3640006E648 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		D2F46BBF292A0D56005DA9CB /* NutritionFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F46BCB292A0D57005DA9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				D26022A2292A52DA003B8127 /* MetaModel.swift */,
 				D26022A6292A563F003B8127 /* NetworkError.swift */,
+				D2DEF3E0292BF3640006E648 /* ResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				D26022C1292ACB1E003B8127 /* NutritionFactsUseCase.swift in Sources */,
 				D26022A1292A52C3003B8127 /* BaseModel.swift in Sources */,
 				D26022C4292ACC19003B8127 /* NutritionFactsStore.swift in Sources */,
+				D2DEF3E1292BF3640006E648 /* ResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

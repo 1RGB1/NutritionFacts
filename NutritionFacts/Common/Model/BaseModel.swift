@@ -8,7 +8,3 @@
 import Foundation
 
 protocol BaseModel: Codable {}
-
-protocol ResponseModel: Codable {
-    var meta: MetaModel { get set }
-}
