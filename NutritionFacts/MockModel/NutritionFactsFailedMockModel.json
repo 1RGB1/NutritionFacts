@@ -1,0 +1,8 @@
+{
+    "meta": {
+        "code": 404,
+        "errorType": "unknown_error",
+        "errorDetail": "An error occured"
+    },
+    "response": null
+}
