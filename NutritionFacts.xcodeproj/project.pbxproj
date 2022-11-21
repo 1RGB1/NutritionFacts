@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06B93B97478604B983F94ADF /* Pods_NutritionFactsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F205245C15DBC126712AC9A /* Pods_NutritionFactsTests.framework */; };
 		20AEF6277C6633DF42D01F76 /* Pods_NutritionFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8556A783BE40FD26E68E716 /* Pods_NutritionFacts.framework */; };
 		D2602299292A4F7C003B8127 /* ApiBaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2602298292A4F7C003B8127 /* ApiBaseRouter.swift */; };
 		D260229D292A51BD003B8127 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260229C292A51BD003B8127 /* NetworkManager.swift */; };
@@ -26,13 +27,31 @@
 		D26022CA292AD53C003B8127 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022C9292AD53C003B8127 /* UIColor+Extensions.swift */; };
 		D26022D3292B633B003B8127 /* NutritionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022D1292B633B003B8127 /* NutritionFactsViewController.swift */; };
 		D26022D4292B633B003B8127 /* NutritionFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26022D2292B633B003B8127 /* NutritionFactsViewController.xib */; };
+		D299F033292C03950062465E /* NutritionFactsSuccessMockModel.json in Resources */ = {isa = PBXBuildFile; fileRef = D299F032292C03950062465E /* NutritionFactsSuccessMockModel.json */; };
+		D299F035292C03C80062465E /* NutritionFactsFailedMockModel.json in Resources */ = {isa = PBXBuildFile; fileRef = D299F034292C03C80062465E /* NutritionFactsFailedMockModel.json */; };
+		D299F037292C04330062465E /* MockHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F036292C04330062465E /* MockHandler.swift */; };
+		D299F04E292C07410062465E /* NutritionFactsUseCaseFailedMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F04D292C07410062465E /* NutritionFactsUseCaseFailedMock.swift */; };
+		D299F050292C078A0062465E /* NutritionFactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F04F292C078A0062465E /* NutritionFactsViewModelTests.swift */; };
+		D299F052292C08230062465E /* NutritionFactsUseCaseSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F051292C08230062465E /* NutritionFactsUseCaseSuccessMock.swift */; };
 		D2DEF3E1292BF3640006E648 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEF3E0292BF3640006E648 /* ResponseModel.swift */; };
 		D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */; };
 		D2F46BCC292A0D57005DA9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BCB292A0D57005DA9CB /* Assets.xcassets */; };
 		D2F46BCF292A0D57005DA9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BCD292A0D57005DA9CB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D299F040292C04950062465E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2F46BB7292A0D56005DA9CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2F46BBE292A0D56005DA9CB;
+			remoteInfo = NutritionFacts;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1C4146C51B0C5B4228528D23 /* Pods-NutritionFactsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionFactsTests.release.xcconfig"; path = "Target Support Files/Pods-NutritionFactsTests/Pods-NutritionFactsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F205245C15DBC126712AC9A /* Pods_NutritionFactsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutritionFactsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8A064353D20FEC53F06E60 /* Pods-NutritionFacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionFacts.debug.xcconfig"; path = "Target Support Files/Pods-NutritionFacts/Pods-NutritionFacts.debug.xcconfig"; sourceTree = "<group>"; };
 		D2602298292A4F7C003B8127 /* ApiBaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBaseRouter.swift; sourceTree = "<group>"; };
 		D260229C292A51BD003B8127 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -52,6 +71,13 @@
 		D26022C9292AD53C003B8127 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		D26022D1292B633B003B8127 /* NutritionFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsViewController.swift; sourceTree = "<group>"; };
 		D26022D2292B633B003B8127 /* NutritionFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionFactsViewController.xib; sourceTree = "<group>"; };
+		D299F032292C03950062465E /* NutritionFactsSuccessMockModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NutritionFactsSuccessMockModel.json; sourceTree = "<group>"; };
+		D299F034292C03C80062465E /* NutritionFactsFailedMockModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NutritionFactsFailedMockModel.json; sourceTree = "<group>"; };
+		D299F036292C04330062465E /* MockHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHandler.swift; sourceTree = "<group>"; };
+		D299F03C292C04950062465E /* NutritionFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutritionFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D299F04D292C07410062465E /* NutritionFactsUseCaseFailedMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsUseCaseFailedMock.swift; sourceTree = "<group>"; };
+		D299F04F292C078A0062465E /* NutritionFactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsViewModelTests.swift; sourceTree = "<group>"; };
+		D299F051292C08230062465E /* NutritionFactsUseCaseSuccessMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsUseCaseSuccessMock.swift; sourceTree = "<group>"; };
 		D2DEF3E0292BF3640006E648 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		D2F46BBF292A0D56005DA9CB /* NutritionFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +85,19 @@
 		D2F46BCE292A0D57005DA9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2F46BD0292A0D57005DA9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8556A783BE40FD26E68E716 /* Pods_NutritionFacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutritionFacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B8E6747F642AA9FEE14CF0 /* Pods-NutritionFactsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionFactsTests.debug.xcconfig"; path = "Target Support Files/Pods-NutritionFactsTests/Pods-NutritionFactsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF8DBC7582C3AC514542451 /* Pods-NutritionFacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionFacts.release.xcconfig"; path = "Target Support Files/Pods-NutritionFacts/Pods-NutritionFacts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D299F039292C04950062465E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B93B97478604B983F94ADF /* Pods_NutritionFactsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F46BBC292A0D56005DA9CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,6 +114,8 @@
 			children = (
 				BA8A064353D20FEC53F06E60 /* Pods-NutritionFacts.debug.xcconfig */,
 				FFF8DBC7582C3AC514542451 /* Pods-NutritionFacts.release.xcconfig */,
+				F6B8E6747F642AA9FEE14CF0 /* Pods-NutritionFactsTests.debug.xcconfig */,
+				1C4146C51B0C5B4228528D23 /* Pods-NutritionFactsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -87,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				D8556A783BE40FD26E68E716 /* Pods_NutritionFacts.framework */,
+				7F205245C15DBC126712AC9A /* Pods_NutritionFactsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,10 +210,53 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		D299F03D292C04950062465E /* NutritionFactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D299F045292C05A50062465E /* Module */,
+			);
+			path = NutritionFactsTests;
+			sourceTree = "<group>";
+		};
+		D299F045292C05A50062465E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				D299F046292C05BE0062465E /* NutritionFacts */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		D299F046292C05BE0062465E /* NutritionFacts */ = {
+			isa = PBXGroup;
+			children = (
+				D299F048292C05D40062465E /* UseCase */,
+				D299F049292C06120062465E /* ViewModel */,
+			);
+			path = NutritionFacts;
+			sourceTree = "<group>";
+		};
+		D299F048292C05D40062465E /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D299F04D292C07410062465E /* NutritionFactsUseCaseFailedMock.swift */,
+				D299F051292C08230062465E /* NutritionFactsUseCaseSuccessMock.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		D299F049292C06120062465E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D299F04F292C078A0062465E /* NutritionFactsViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D2F46BB6292A0D56005DA9CB = {
 			isa = PBXGroup;
 			children = (
 				D2F46BC1292A0D56005DA9CB /* NutritionFacts */,
+				D299F03D292C04950062465E /* NutritionFactsTests */,
 				D2F46BC0292A0D56005DA9CB /* Products */,
 				4656C8E66908BC72FED1E5C0 /* Pods */,
 				CC2FB89076AB23EE241E7D7A /* Frameworks */,
@@ -186,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F46BBF292A0D56005DA9CB /* NutritionFacts.app */,
+				D299F03C292C04950062465E /* NutritionFactsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,6 +338,7 @@
 		D2F46BDB292A1B19005DA9CB /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				D299F036292C04330062465E /* MockHandler.swift */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";
@@ -263,6 +346,8 @@
 		D2F46BDC292A1B56005DA9CB /* MockModel */ = {
 			isa = PBXGroup;
 			children = (
+				D299F034292C03C80062465E /* NutritionFactsFailedMockModel.json */,
+				D299F032292C03950062465E /* NutritionFactsSuccessMockModel.json */,
 			);
 			path = MockModel;
 			sourceTree = "<group>";
@@ -270,6 +355,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D299F03B292C04950062465E /* NutritionFactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D299F042292C04950062465E /* Build configuration list for PBXNativeTarget "NutritionFactsTests" */;
+			buildPhases = (
+				F143A9530FEF66E2AADB8E71 /* [CP] Check Pods Manifest.lock */,
+				D299F038292C04950062465E /* Sources */,
+				D299F039292C04950062465E /* Frameworks */,
+				D299F03A292C04950062465E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D299F041292C04950062465E /* PBXTargetDependency */,
+			);
+			name = NutritionFactsTests;
+			productName = NutritionFactsTests;
+			productReference = D299F03C292C04950062465E /* NutritionFactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D2F46BBE292A0D56005DA9CB /* NutritionFacts */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2F46BD3292A0D57005DA9CB /* Build configuration list for PBXNativeTarget "NutritionFacts" */;
@@ -299,6 +403,11 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					D299F03B292C04950062465E = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+						TestTargetID = D2F46BBE292A0D56005DA9CB;
+					};
 					D2F46BBE292A0D56005DA9CB = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -318,11 +427,19 @@
 			projectRoot = "";
 			targets = (
 				D2F46BBE292A0D56005DA9CB /* NutritionFacts */,
+				D299F03B292C04950062465E /* NutritionFactsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D299F03A292C04950062465E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F46BBD292A0D56005DA9CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +447,8 @@
 				D2F46BCF292A0D57005DA9CB /* LaunchScreen.storyboard in Resources */,
 				D2F46BCC292A0D57005DA9CB /* Assets.xcassets in Resources */,
 				D26022D4292B633B003B8127 /* NutritionFactsViewController.xib in Resources */,
+				D299F033292C03950062465E /* NutritionFactsSuccessMockModel.json in Resources */,
+				D299F035292C03C80062465E /* NutritionFactsFailedMockModel.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,9 +494,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F143A9530FEF66E2AADB8E71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NutritionFactsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D299F038292C04950062465E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D299F04E292C07410062465E /* NutritionFactsUseCaseFailedMock.swift in Sources */,
+				D299F050292C078A0062465E /* NutritionFactsViewModelTests.swift in Sources */,
+				D299F052292C08230062465E /* NutritionFactsUseCaseSuccessMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F46BBB292A0D56005DA9CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +545,7 @@
 				D260229D292A51BD003B8127 /* NetworkManager.swift in Sources */,
 				D26022B9292AC359003B8127 /* FactsModel.swift in Sources */,
 				D26022CA292AD53C003B8127 /* UIColor+Extensions.swift in Sources */,
+				D299F037292C04330062465E /* MockHandler.swift in Sources */,
 				D2602299292A4F7C003B8127 /* ApiBaseRouter.swift in Sources */,
 				D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */,
 				D26022A9292A57EF003B8127 /* NetworkConfigInfo.swift in Sources */,
@@ -405,6 +557,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D299F041292C04950062465E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2F46BBE292A0D56005DA9CB /* NutritionFacts */;
+			targetProxy = D299F040292C04950062465E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D2F46BCD292A0D57005DA9CB /* LaunchScreen.storyboard */ = {
@@ -418,6 +578,59 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D299F043292C04950062465E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B8E6747F642AA9FEE14CF0 /* Pods-NutritionFactsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B6HF4627C;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmad.NutritionFactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutritionFacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NutritionFacts";
+			};
+			name = Debug;
+		};
+		D299F044292C04950062465E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4146C51B0C5B4228528D23 /* Pods-NutritionFactsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B6HF4627C;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmad.NutritionFactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutritionFacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NutritionFacts";
+			};
+			name = Release;
+		};
 		D2F46BD1292A0D57005DA9CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -589,6 +802,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D299F042292C04950062465E /* Build configuration list for PBXNativeTarget "NutritionFactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299F043292C04950062465E /* Debug */,
+				D299F044292C04950062465E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D2F46BBA292A0D56005DA9CB /* Build configuration list for PBXProject "NutritionFacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
