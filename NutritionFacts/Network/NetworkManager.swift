@@ -50,8 +50,6 @@ class NetworkManager {
             return
         }
         
-        print(data.parseToJSONString() ?? [:])
-        
         do {
             let decoder = JSONDecoder()
             let model = try decoder.decode(T.self, from: data)
