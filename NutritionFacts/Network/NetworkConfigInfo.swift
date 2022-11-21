@@ -17,7 +17,7 @@ class NetworkConfigInfo {
     
     static let shared: NetworkConfigInfo = {
         return NetworkConfigInfo()
-    } ()
+    }()
     
     func getParam(withType type: NetworkConfigInfoType) -> String {
         switch type {

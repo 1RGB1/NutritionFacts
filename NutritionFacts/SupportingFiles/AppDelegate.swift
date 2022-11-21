@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     private func setIntialViewController() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = NutritionFactsViewController()
+        let initialViewController = NutritionFactsViewController()
+        initialViewController.viewModel = NutritionFactsViewModel()
+        self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
     }
 }

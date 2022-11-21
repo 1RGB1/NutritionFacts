@@ -11,19 +11,22 @@ import ProgressHUD
 class NutritionFactsViewController: UIViewController {
     
     @IBOutlet private weak var gradientView: UIView!
-    @IBOutlet private weak var ingredientLabel: UILabel!
+    @IBOutlet private weak var ingredientNameLabel: UILabel!
+    @IBOutlet private weak var separatorView: UIView!
+    @IBOutlet private weak var ingredientCaloriesLabel: UILabel!
+    @IBOutlet private weak var ingredientDisclaimerLabel: UILabel!
     @IBOutlet private weak var moreInfoButton: UIButton!
     @IBOutlet private weak var carbsLabel: UILabel!
     @IBOutlet private weak var proteinLabel: UILabel!
     @IBOutlet private weak var fatLabel: UILabel!
     
-    let viewModel = NutritionFactsViewModel()
-    var randomId = 0
+    var viewModel: NutritionFactsViewModel?
+    private var randomId = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel.delegate = self
+        viewModel?.delegate = self
         
         prepareUI()
         getFacts()
@@ -61,57 +64,13 @@ class NutritionFactsViewController: UIViewController {
     
     fileprivate func prepareIngredientLabel(name: String, calories: Int) {
         
-        let text = NSMutableAttributedString()
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 20
+        if separatorView.isHidden {
+            separatorView.isHidden = false
+            ingredientDisclaimerLabel.isHidden = false
+        }
         
-        text.append(
-            NSAttributedString(
-                string: name.uppercased(),
-                attributes: [
-                    NSAttributedString.Key.foregroundColor: UIColor.white,
-                    NSAttributedString.Key.font: UIFont(name: "Avenir-Medium", size: 20)!,
-                    NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue
-                ]
-            )
-        )
-        text.append(
-            NSAttributedString(
-                string: "\n",
-                attributes: [
-                    NSAttributedString.Key.font: UIFont(name: "Avenir-Light", size: 1)!
-                ]
-            )
-        )
-        text.append(
-            NSAttributedString(
-                string: "\(calories)",
-                attributes: [
-                    NSAttributedString.Key.foregroundColor: UIColor.white,
-                    NSAttributedString.Key.font: UIFont(name: "Avenir-Medium", size: 60)!
-                ]
-            )
-        )
-        text.append(
-            NSAttributedString(
-                string: "\n",
-                attributes: [
-                    NSAttributedString.Key.font: UIFont(name: "Avenir-Light", size: 1)!
-                ]
-            )
-        )
-        text.append(
-            NSAttributedString(
-                string: "Calories per serving",
-                attributes: [
-                    NSAttributedString.Key.foregroundColor: UIColor.white,
-                    NSAttributedString.Key.font: UIFont(name: "Avenir-Medium", size: 20)!
-                ]
-            )
-        )
-        
-        ingredientLabel.attributedText = text
-        ingredientLabel.textAlignment = .center
+        ingredientNameLabel.text = name
+        ingredientCaloriesLabel.text = "\(calories)"
     }
     
     fileprivate func updateFacts(_ facts: FactsModel) {
@@ -135,7 +94,7 @@ class NutritionFactsViewController: UIViewController {
             tmp = Int.random(in: 1..<201)
         }
         randomId = tmp
-        viewModel.getFactsById(randomId)
+        viewModel?.getFactsById(randomId)
     }
 }
 
