@@ -15,13 +15,18 @@
 		D26022A5292A55FD003B8127 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A4292A55FD003B8127 /* Data+Extensions.swift */; };
 		D26022A7292A563F003B8127 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A6292A563F003B8127 /* NetworkError.swift */; };
 		D26022A9292A57EF003B8127 /* NetworkConfigInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022A8292A57EF003B8127 /* NetworkConfigInfo.swift */; };
-		D26022AE292AC272003B8127 /* NutritionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022AC292AC272003B8127 /* NutritionFactsViewController.swift */; };
-		D26022AF292AC272003B8127 /* NutritionFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26022AD292AC272003B8127 /* NutritionFactsViewController.xib */; };
 		D26022B6292AC329003B8127 /* FactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022B5292AC329003B8127 /* FactsRouter.swift */; };
 		D26022B9292AC359003B8127 /* FactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022B8292AC359003B8127 /* FactsModel.swift */; };
 		D26022BB292AC370003B8127 /* NutritionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022BA292AC370003B8127 /* NutritionModel.swift */; };
+		D26022BD292ACAB6003B8127 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022BC292ACAB6003B8127 /* UIView+Extensions.swift */; };
+		D26022BF292ACB0F003B8127 /* NutritionFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022BE292ACB0F003B8127 /* NutritionFactsViewModel.swift */; };
+		D26022C1292ACB1E003B8127 /* NutritionFactsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022C0292ACB1E003B8127 /* NutritionFactsUseCase.swift */; };
+		D26022C4292ACC19003B8127 /* NutritionFactsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022C3292ACC19003B8127 /* NutritionFactsStore.swift */; };
+		D26022C6292AD144003B8127 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022C5292AD144003B8127 /* UIViewController+Extensions.swift */; };
+		D26022CA292AD53C003B8127 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022C9292AD53C003B8127 /* UIColor+Extensions.swift */; };
+		D26022D3292B633B003B8127 /* NutritionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26022D1292B633B003B8127 /* NutritionFactsViewController.swift */; };
+		D26022D4292B633B003B8127 /* NutritionFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26022D2292B633B003B8127 /* NutritionFactsViewController.xib */; };
 		D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */; };
-		D2F46BCA292A0D56005DA9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BC8292A0D56005DA9CB /* Main.storyboard */; };
 		D2F46BCC292A0D57005DA9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BCB292A0D57005DA9CB /* Assets.xcassets */; };
 		D2F46BCF292A0D57005DA9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F46BCD292A0D57005DA9CB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -35,14 +40,19 @@
 		D26022A4292A55FD003B8127 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		D26022A6292A563F003B8127 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D26022A8292A57EF003B8127 /* NetworkConfigInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigInfo.swift; sourceTree = "<group>"; };
-		D26022AC292AC272003B8127 /* NutritionFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsViewController.swift; sourceTree = "<group>"; };
-		D26022AD292AC272003B8127 /* NutritionFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionFactsViewController.xib; sourceTree = "<group>"; };
 		D26022B5292AC329003B8127 /* FactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsRouter.swift; sourceTree = "<group>"; };
 		D26022B8292AC359003B8127 /* FactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsModel.swift; sourceTree = "<group>"; };
 		D26022BA292AC370003B8127 /* NutritionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionModel.swift; sourceTree = "<group>"; };
+		D26022BC292ACAB6003B8127 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D26022BE292ACB0F003B8127 /* NutritionFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsViewModel.swift; sourceTree = "<group>"; };
+		D26022C0292ACB1E003B8127 /* NutritionFactsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsUseCase.swift; sourceTree = "<group>"; };
+		D26022C3292ACC19003B8127 /* NutritionFactsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsStore.swift; sourceTree = "<group>"; };
+		D26022C5292AD144003B8127 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D26022C9292AD53C003B8127 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		D26022D1292B633B003B8127 /* NutritionFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsViewController.swift; sourceTree = "<group>"; };
+		D26022D2292B633B003B8127 /* NutritionFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionFactsViewController.xib; sourceTree = "<group>"; };
 		D2F46BBF292A0D56005DA9CB /* NutritionFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2F46BC9292A0D56005DA9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2F46BCB292A0D57005DA9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2F46BCE292A0D57005DA9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2F46BD0292A0D57005DA9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,8 +109,8 @@
 		D26022B0292AC279003B8127 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D26022AC292AC272003B8127 /* NutritionFactsViewController.swift */,
-				D26022AD292AC272003B8127 /* NutritionFactsViewController.xib */,
+				D26022D1292B633B003B8127 /* NutritionFactsViewController.swift */,
+				D26022D2292B633B003B8127 /* NutritionFactsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +118,7 @@
 		D26022B1292AC27E003B8127 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D26022BE292ACB0F003B8127 /* NutritionFactsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -117,18 +128,20 @@
 			children = (
 				D26022B7292AC34A003B8127 /* Model */,
 				D26022B4292AC313003B8127 /* Router */,
-				D26022B3292AC2A1003B8127 /* Usecase */,
+				D26022C2292ACC08003B8127 /* Store */,
+				D26022B3292AC2A1003B8127 /* UseCase */,
 				D26022B1292AC27E003B8127 /* ViewModel */,
 				D26022B0292AC279003B8127 /* View */,
 			);
 			path = NutritionFacts;
 			sourceTree = "<group>";
 		};
-		D26022B3292AC2A1003B8127 /* Usecase */ = {
+		D26022B3292AC2A1003B8127 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				D26022C0292ACB1E003B8127 /* NutritionFactsUseCase.swift */,
 			);
-			path = Usecase;
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		D26022B4292AC313003B8127 /* Router */ = {
@@ -146,6 +159,14 @@
 				D26022BA292AC370003B8127 /* NutritionModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D26022C2292ACC08003B8127 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				D26022C3292ACC19003B8127 /* NutritionFactsStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		D2F46BB6292A0D56005DA9CB = {
@@ -182,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				D2F46BC2292A0D56005DA9CB /* AppDelegate.swift */,
-				D2F46BC8292A0D56005DA9CB /* Main.storyboard */,
 				D2F46BCB292A0D57005DA9CB /* Assets.xcassets */,
 				D2F46BCD292A0D57005DA9CB /* LaunchScreen.storyboard */,
 				D2F46BD0292A0D57005DA9CB /* Info.plist */,
@@ -223,6 +243,9 @@
 			isa = PBXGroup;
 			children = (
 				D26022A4292A55FD003B8127 /* Data+Extensions.swift */,
+				D26022BC292ACAB6003B8127 /* UIView+Extensions.swift */,
+				D26022C5292AD144003B8127 /* UIViewController+Extensions.swift */,
+				D26022C9292AD53C003B8127 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,8 +326,7 @@
 			files = (
 				D2F46BCF292A0D57005DA9CB /* LaunchScreen.storyboard in Resources */,
 				D2F46BCC292A0D57005DA9CB /* Assets.xcassets in Resources */,
-				D26022AF292AC272003B8127 /* NutritionFactsViewController.xib in Resources */,
-				D2F46BCA292A0D56005DA9CB /* Main.storyboard in Resources */,
+				D26022D4292B633B003B8127 /* NutritionFactsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,31 +380,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				D26022A3292A52DA003B8127 /* MetaModel.swift in Sources */,
+				D26022D3292B633B003B8127 /* NutritionFactsViewController.swift in Sources */,
+				D26022BF292ACB0F003B8127 /* NutritionFactsViewModel.swift in Sources */,
 				D26022B6292AC329003B8127 /* FactsRouter.swift in Sources */,
 				D26022A7292A563F003B8127 /* NetworkError.swift in Sources */,
 				D26022BB292AC370003B8127 /* NutritionModel.swift in Sources */,
+				D26022C6292AD144003B8127 /* UIViewController+Extensions.swift in Sources */,
 				D26022A5292A55FD003B8127 /* Data+Extensions.swift in Sources */,
+				D26022BD292ACAB6003B8127 /* UIView+Extensions.swift in Sources */,
 				D260229D292A51BD003B8127 /* NetworkManager.swift in Sources */,
 				D26022B9292AC359003B8127 /* FactsModel.swift in Sources */,
+				D26022CA292AD53C003B8127 /* UIColor+Extensions.swift in Sources */,
 				D2602299292A4F7C003B8127 /* ApiBaseRouter.swift in Sources */,
 				D2F46BC3292A0D56005DA9CB /* AppDelegate.swift in Sources */,
 				D26022A9292A57EF003B8127 /* NetworkConfigInfo.swift in Sources */,
+				D26022C1292ACB1E003B8127 /* NutritionFactsUseCase.swift in Sources */,
 				D26022A1292A52C3003B8127 /* BaseModel.swift in Sources */,
-				D26022AE292AC272003B8127 /* NutritionFactsViewController.swift in Sources */,
+				D26022C4292ACC19003B8127 /* NutritionFactsStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2F46BC8292A0D56005DA9CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2F46BC9292A0D56005DA9CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2F46BCD292A0D57005DA9CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -521,9 +541,7 @@
 				INFOPLIST_FILE = NutritionFacts/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,9 +568,7 @@
 				INFOPLIST_FILE = NutritionFacts/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
