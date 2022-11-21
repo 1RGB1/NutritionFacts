@@ -16,7 +16,6 @@
 
 - Calling API to get nutrition facts
 - Supporting landscape and portrait
-- Dependency injection
 - Unit testing
 
 ## Author
